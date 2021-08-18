@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body{
+  background-color: aquamarine;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.react-kanban-column {
+  background-color: orange;
+  font-family: 'Poppins', sans-serif;
+}
+
+.react-kanban-card {
+  background-color: white;
+  
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.react-kanban-card__title {
+  font-size: large;
+  
+}
+
+.react-kanban-card--dragging {
+  transform: rotate(9deg);
+  background-color: yellow;
+
 }
