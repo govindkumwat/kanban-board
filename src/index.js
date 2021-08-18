@@ -83,21 +83,16 @@ function ControlledBoard() {
     setBoard(updatedBoard);
   }
 
-  // Note: To enable user to create a new column all the following are needed as a minimum
-
-  /** This is called by onColumnNew on the board when a new column has been requested and 
-  the form on the ColumnAdder component has been filled in by the user. We update our state
-  to get the board to render with the new data */
+  
   const handleColumnAdded = (newBoard, newColumn) => {
     console.info("column added!");
     setBoard(newBoard);
   };
 
-  /** This is called when a new column has been requested, its main job is 
-   to give you a chance to save it and return a new id for the column */
+  
   const handleColumnConfirmed = (newColumnName) => {
     console.info("Column id requested");
-    // You will need to generate a new id for you column here - id from a database insert or similar?
+   
     const newColumn = {
       id: "testing-but-this-should-be-unique",
       ...newColumnName
